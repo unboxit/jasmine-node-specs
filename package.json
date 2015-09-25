@@ -1,0 +1,21 @@
+{
+  "name": "jasmine-node-specs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "coverage": "./node_modules/.bin/istanbul cover jasmine-node --captureExceptions spec/ && cat ./coverage/coverage.json | ./node_modules/codecov.io/bin/codecov.io.js",
+    "test": "jasmine-node spec/",
+    "watch": "jasmine-node spec/ --autotest --watch . --growl"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "codecov.io": "0.1.6",
+    "istanbul": "0.3.21",
+    "jasmine-node": "1.14.5"
+  },
+  "dependencies": {
+  }
+}
