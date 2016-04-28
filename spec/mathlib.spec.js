@@ -1,14 +1,15 @@
-var MathLib = require('../src/mathlib');
-
 'use strict';
 
-describe("#add", function () {
+var MathLib = require('../src/mathlib');
+
+describe("#addition", function () {
   it("should add 2 and 2", function () {
-    var result = MathLib.add(2, 2);
+    var result = MathLib.addition(2, 2);
     expect(result).toEqual(4);
   });
   it("should add 4 and 4", function () {
-    var result = MathLib.add(4, 4);
+    var result = MathLib.addition(4, 4);
+
     expect(result).toEqual(8);
   });
 });
@@ -35,7 +36,7 @@ describe("#multiply", function () {
   });
 });
 
-describe("#devde", function () {
+describe("#devide", function () {
   it("should devide 4 by 2", function () {
     var result = MathLib.devide(4, 2);
     expect(result).toEqual(2);

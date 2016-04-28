@@ -1,7 +1,7 @@
 'use strict';
 
 var MathLib = {
-  add: function (x, y) {
+  addition: function (x, y) {
     return x + y;
   },
   subtract: function (x, y) {
